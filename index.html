@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Learning Path</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-title">Learning Path</div>
+    </div>
+
+    <div class="info-container">
+      <div class="student-container"></div>
+      <br />
+
+      <div class="form-container">
+        <div class="title-add-new-course">Add a new course</div>
+        <br />
+        <form class="form-add-course" onsubmit="addCourse(event)">
+          <label for="course">Course:</label>
+          <input type="text" name="course" id="form-course" required />
+          <br />
+          <label for="description">Description:</label>
+          <input
+            type="text"
+            name="description"
+            id="form-description"
+            required
+          />
+          <br />
+          <label for="start-date">Start:</label>
+          <input type="date" name="start-date" id="form-start-date" required />
+          <br />
+          <label for="finish-date">Finish:</label>
+          <input
+            type="date"
+            name="finish-date"
+            id="form-finish-date"
+            required
+          />
+          <br />
+          <input type="submit" value="Add course" class="button-add-course" />
+        </form>
+      </div>
+    </div>
+
+    <div class="agenda-container"></div>
+  </body>
+</html>
